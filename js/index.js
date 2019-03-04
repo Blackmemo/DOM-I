@@ -86,8 +86,14 @@ ctaBtn.innerHTML = siteContent['cta']['button'];
 let ctaBtnT = document.querySelector('.cta-text')
 ctaBtnT.style.letterSpacing = 0;
 
+//changes h4
 ctaBtn.addEventListener('click', (event) => {
   ctaHeader.innerHTML = 'And it gets better'
+})
+
+//changes h4 back to normal
+ctaBtn.addEventListener('dblclick', (event) => {
+  ctaHeader.innerHTML = siteContent['cta']['h1'].split(' ').join(`<br>`)
 })
 
 //Main-Content
