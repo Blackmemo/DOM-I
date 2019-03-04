@@ -86,6 +86,9 @@ ctaBtn.innerHTML = siteContent['cta']['button'];
 let ctaBtnT = document.querySelector('.cta-text')
 ctaBtnT.style.letterSpacing = 0;
 
+ctaBtn.addEventListener('click', (event) => {
+  ctaHeader.innerHTML = 'And it gets better'
+})
 
 //Main-Content
 
